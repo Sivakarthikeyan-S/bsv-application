@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./../general.css">
-    <title>Mnemonics</title>
+    <title>Bitcoin Address</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <form id="form" >
         <label>authToken:</label><br>
-        <input type="text" id="authToken" value="{authToken}"><br><br>
-        <input type="button" onClick="getMnemonic()" value="Get Mnemonic"/>
+        <input type="text" id="authToken" value="{authToken}">
+        <input type="button" onClick="getAddress()" value="Get Address"/>
     </form> 
       
     <div id="block2">
         <p id="token"> </p>
     </div>
-    <script src="./mnemonic.js"></script>
+    <script src="./address.js"></script>
 </body>
 </html>
