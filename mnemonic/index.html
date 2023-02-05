@@ -5,28 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Wallet Creation</title>
+    <title>Mnemonics</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <form id="form" >
         <label>authToken:</label><br>
-        <input type="text" id="authToken" value="{AuthToken}">
-        <br><br>
-        <input type="button" onClick="createWallet()" value="Create Wallet" style="cursor:pointer"/>
+        <input type="text" id="authToken" value="{authToken}"><br><br>
+        <input type="button" onClick="getMnemonic()" value="Get Mnemonic"/>
     </form> 
-    
+      
     <div id="block2">
         <p id="token"> </p>
     </div>
-    
-    <form id="form2" >
-        <input type="button" onClick="showWallets()" value="Show Wallets" style="cursor:pointer"/>
-    </form> 
-    
-    <div id="block2">
-        <p id="wallets"> </p>
-    </div>
-    <script src="./createWallet.js"></script>
+    <script src="./mnemonic.js"></script>
 </body>
 </html>
