@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../general.css">
+    <title>Token Issuance</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <form id="form" >
+        <label>Authentication Token</label><br />
+        <input type="text" id="authToken" value="{authToken}"><br /><br />
+        <label>Token Name</label><br />
+        <input type="text" id="tokenName" value="Satolearn Token"><br /><br />
+        <label>Symbol</label><br />
+        <input type="text" id="symbol" value="SATOL"><br /><br />
+        <label>Description</label><br />
+        <input type="text" id="description" value="A Satolearn token for eager learners"><br /><br />
+        <label>Icon URL</label><br />
+        <input type="text" id="icon" value="https://www.satolearn.com/media/logos/bird-xs.png"><br /><br />
+        <label>Supply</label><br />
+        <input type="text" id="supply" value="4"><br /><br />
+  
+  
+        <input type="button" onClick="issueToken()" value="Issue Token"/>
+    </form> 
+      
+    <div id="block2">
+        <p id="token"> </p>
+    </div>
+    <script src="./tokenIssuance.js"></script>
+</body>
+</html>
