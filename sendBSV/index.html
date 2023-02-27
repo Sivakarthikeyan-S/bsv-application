@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../general.css">
+    <title>Send BSV</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <form id="form" >
+        <label>Authentication Token</label><br>
+        <input type="text" id="authToken" value="{authToken}"><br /><br />
+        <input type="button" onClick="walletBalance()" value="Send BSV"/>
+      </form> 
+      
+      <div id="block2">
+         <p id="response"> </p>
+      </div>
+    <script src="./sendBSV.js"></script>
+</body>
+</html>
